@@ -2,8 +2,12 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
 const routes: Routes = [
-  { path: '', loadChildren: './tabs/tabs.module#TabsPageModule' },
-  { path: 'login', loadChildren: './login/login.module#LoginPageModule' }
+  { path: '', redirectTo: 'login', pathMatch: 'full' },
+  { path: 'login', loadChildren: './public/login/login.module#LoginPageModule' },
+  { path: 'park-list', loadChildren: './members/park-list/park-list.module#ParkListPageModule' },
+  { path: 'register', loadChildren: './public/register/register.module#RegisterPageModule' }
+
+
 ];
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
