@@ -1,0 +1,8 @@
+{
+  "name": "EZpark",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular",
+  "pro_id": "128d55dc"
+}
