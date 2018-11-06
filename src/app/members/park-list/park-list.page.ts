@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ParklotService, Parklot } from '../../services/parklot.service';
 
 @Component({
   selector: 'app-park-list',
@@ -7,9 +8,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ParkListPage implements OnInit {
 
-  constructor() { }
+  parklot : Parklot[];
+  constructor(private parklotService: ParklotService ) { }
 
   ngOnInit() {
+    this.parklotService.getParklots().subscribe(res => {
+      this.parklot = res;
+    });
   }
+
+  
 
 }

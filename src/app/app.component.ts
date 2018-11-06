@@ -4,9 +4,12 @@ import { Platform } from '@ionic/angular';
 import { SplashScreen } from '@ionic-native/splash-screen/ngx';
 import { StatusBar } from '@ionic-native/status-bar/ngx';
 
+import { AngularFireAuth} from '@angular/fire/auth'
+
 @Component({
   selector: 'app-root',
-  templateUrl: 'app.component.html'
+  templateUrl: 'app.component.html',
+  providers: [AngularFireAuth],
 })
 export class AppComponent {
   constructor(
