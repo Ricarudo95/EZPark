@@ -12,10 +12,7 @@ const routes: Routes = [
     path: '',
     component: LoginPage
   },
-  {
-    path: 'register', 
-    loadChildren: './public/register/register.module#RegisterPageModule' 
-  }
+
 ];
 
 @NgModule({
