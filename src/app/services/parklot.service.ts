@@ -7,7 +7,8 @@ export interface Parklot{
   cost_hour:number,
   location:string,
   name:string,
-  spaces:Map<string,string>
+  spaces:Map<string,string>,
+  MapUrl:string
 }
 
 @Injectable({
@@ -45,6 +46,8 @@ export class ParklotService {
   updateParklots(parklot: Parklot, id: string){
     return this.parklotCollection.doc(id).update(parklot);
   }
+
+  
 
   addParklot(parklot: Parklot){
     return this.parklotCollection.add(parklot);

@@ -6,34 +6,14 @@
 
 <ion-content padding>
 
-    <ion-card>
+    <ion-card (click)="getDetails(parkspace)" *ngFor='let parkspace of parklot'>
         
         <ion-card-header>
-            <ion-card-title>Hello World</ion-card-title>
+            <ion-card-title>{{parkspace.name}}</ion-card-title>
         </ion-card-header>
         <ion-card-content>
             <p>The content for this card</p>
+
         </ion-card-content>
     </ion-card>
-
-    <ion-card>
-        
-        <ion-card-header>
-            <ion-card-title>Hello World</ion-card-title>
-        </ion-card-header>
-        <ion-card-content>
-            <p>The content for this card</p>
-        </ion-card-content>
-    </ion-card>
-
-    <ion-card>
-        
-        <ion-card-header>
-            <ion-card-title>Hello World</ion-card-title>
-        </ion-card-header>
-        <ion-card-content>
-            <p>The content for this card</p>
-        </ion-card-content>
-    </ion-card>
-
 </ion-content>

@@ -5,7 +5,9 @@ const routes: Routes = [
   { path: '', redirectTo: 'login', pathMatch: 'full' },
   { path: 'login', loadChildren: './public/login/login.module#LoginPageModule' },
   { path: 'park-list', loadChildren: './members/park-list/park-list.module#ParkListPageModule' },
-  { path: 'register', loadChildren: './public/register/register.module#RegisterPageModule' }
+  { path: 'register', loadChildren: './public/register/register.module#RegisterPageModule' },
+  { path: 'park-details', loadChildren: './members/park-details/park-details.module#ParkDetailsPageModule' }
+
 
 
 ];

@@ -14,12 +14,13 @@ import { environment } from '../environments/environment'
 
 import { AngularFireModule } from '@angular/fire';
 import { AngularFirestoreModule } from '@angular/fire/firestore';
+import { ParkDetailsPageModule } from './members/park-details/park-details.module';
 
 
 @NgModule({
   declarations: [AppComponent],
   entryComponents: [],
-  imports: [BrowserModule, IonicModule.forRoot(), AppRoutingModule, AngularFireModule.initializeApp(environment.firebase), AngularFirestoreModule],
+  imports: [BrowserModule, IonicModule.forRoot(),  AppRoutingModule, AngularFireModule.initializeApp(environment.firebase), AngularFirestoreModule, ParkDetailsPageModule],
   providers: [
     StatusBar,
     SplashScreen,
